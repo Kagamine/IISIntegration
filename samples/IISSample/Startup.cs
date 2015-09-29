@@ -15,8 +15,8 @@ namespace IISSample
 
             app.Run(async (context) =>
             {
-
                 app.UseIISPlatformHandler();
+
                 logger.LogVerbose("Received request: " + context.Request.Method + " " + context.Request.Path);
 
                 context.Response.ContentType = "text/plain";
